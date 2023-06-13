@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/buttonNumberQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/k1" />
+
+    <TextView
+        android:id="@+id/quantity_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="start"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="bottom"
+        android:text="@string/quantity_0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

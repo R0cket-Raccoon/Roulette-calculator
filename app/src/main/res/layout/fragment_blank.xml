@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Pole"
+    android:id="@+id/fragment_pole"
+    android:background="@drawable/pole">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="8.16">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/quantity_00"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+
+                    android:text="@string/quantity_0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/K00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/k00"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="0.2" />
+                <TextView
+                    android:id="@+id/quantity_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+
+                    android:text="@string/quantity_0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/K0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/k0"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="0.82" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="11">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="0.1"
+                   />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/idpole"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7.6"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    tools:listitem="@layout/item_quantity"/>
+
+                <LinearLayout
+                    android:id="@+id/liner_1st12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+                    <View
+                        android:id="@+id/view_probability_1st12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/probability_1st12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="@string/quantity_0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <View
+                        android:id="@+id/view_probability_2nd12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/probability_2nd12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/view_probability_3rd12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/probability_3rd12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/liner_RED"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.4">
+                    <View
+                        android:id="@+id/view_probability_1to18"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/probability_1to18"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/view_probability_EVEN"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/probability_EVEN"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/view_probability_RED"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/probability_RED"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/view_probability_BLACK"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/probability_BLACK"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/view_probability_ODD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/probability_ODD"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+                    <View
+                        android:id="@+id/view_probability_19to36"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="0.5"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/probability_19to36"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/quantity_0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/view_probability_REDBLACK"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="0.7"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/liner_2to1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/probability_1_2to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+
+                    android:rotation="-90"
+                    android:text="@string/quantity_0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                <View
+                    android:id="@+id/view_probability_1_2to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/probability_2_2to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:rotation="-90"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/quantity_0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                <View
+                    android:id="@+id/view_probability_2_2to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/probability_3_2to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:rotation="-90"
+                    android:text="@string/quantity_0"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/view_probability_3_2to1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"/>
+                <View
+                    android:id="@+id/view_2to1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.46"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/view_probability_2to1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
